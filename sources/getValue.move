@@ -8,7 +8,7 @@ module swap_account::AnimeLiquid{
     use pancake::swap;
     use pancake::swap_utils;
     use aux::amm;
-
+          
     #[view]
     public fun get_amount_out__liquid_Uncorrelated<X, Y>(amount_in: u64): u64 {
     let coin_out_val = router::get_amount_out<X, Y, Uncorrelated>(amount_in);
